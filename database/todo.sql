@@ -19,4 +19,4 @@ SELECT * FROM todos WHERE priority > 1;
 
 UPDATE todos SET completed_at = '06-27-2107' WHERE id = '1';
 
-DELETE FROM todos WHERE completed_at = '06-27-2017';
+DELETE FROM todos WHERE completed_at = NOT NULL;
