@@ -1,10 +1,10 @@
 CREATE TABLE todos (
-    id integer NOT NULL,
-    title character varying(255) NOT NULL,
-    details text,
-    priority integer DEFAULT 1 NOT NULL,
-    created_at timestamp without time zone NOT NULL,
-    completed_at timestamp without time zone
+    id SERIAL PRIMARY KEY NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    details TEXT NULL,
+    priority INTEGER DEFAULT '1' NOT NULL,
+    created_at TIMESTAMP NOT NULL,
+    completed_at TIMESTAMP NULL
 );
 
 
